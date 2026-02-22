@@ -124,7 +124,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 5000;
+    /* Higher than everything else */
     padding: 1.5rem 3rem;
     display: flex;
     justify-content: space-between;
@@ -410,7 +411,8 @@ nav a.active::after {
             rgba(0, 0, 0, 0.1) 50%);
     background-size: 100% 4px;
     pointer-events: none;
-    z-index: 2001;
+    z-index: 10;
+    /* Move below nav and form */
     opacity: 0.2;
 }
 

@@ -101,14 +101,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.module');
     const navLinks = document.querySelectorAll('.nav-hud a');
 
+    // Smooth Scroll Implementation
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const targetId = link.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
     window.addEventListener('scroll', () => {
         let current = '';
+        const scrollPos = window.scrollY || window.pageYOffset;
+
         sections.forEach(s => {
-            if (pageYOffset >= s.offsetTop - 150) current = s.getAttribute('id');
+            if (scrollPos >= s.offsetTop - 150) {
+                current = s.getAttribute('id');
+            }
         });
+
         navLinks.forEach(l => {
             l.classList.remove('active');
-            if (l.getAttribute('href').includes(current)) l.classList.add('active');
+            if (l.getAttribute('href') === `#${current}`) {
+                l.classList.add('active');
+            }
         });
     });
 
