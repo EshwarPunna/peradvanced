@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punna Eshwar Raj | AI & Data Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <div class="scanlines"></div>
+    <div id="particles-js"></div>
+
+    <!-- Intro Overlay -->
+    <div id="intro-overlay" class="intro-overlay">
+        <div class="intro-content">
+            <h2 class="sys-msg">> INITIALIZING INFRASTRUCTURE...</h2>
+            <h1 class="intro-name">PUNNA ESHWAR RAJ</h1>
+            <p class="intro-bio">AI & Data Engineer | Generative AI Expert</p>
+            <div class="loading-bar-container">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="hud-nav">
+        <div class="logo">PER.AI</div>
+        <nav>
+            <a href="#home" class="active">SYSTEM</a>
+            <a href="#engineering">ENGINEERING</a>
+            <a href="#archive">ARCHIVE</a>
+            <a href="#contact">CONNECT</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero: Robot & System Visual -->
+        <section id="home" class="module hero-module">
+            <div class="hero-layout container">
+                <div class="hero-text">
+                    <h2 class="sub-header">[ CORE INITIALIZATION ]</h2>
+                    <h1 class="hero-title">Architecting <span class="cyan">Intelligent</span> Systems.</h1>
+                    <p class="hero-desc">I design and deploy scalable LLM solutions and enterprise data engines that
+                        power the next generation of AI.</p>
+                    <div class="hero-actions">
+                        <a href="#archive" class="btn primary">View Archive</a>
+                        <a href="#contact" class="btn secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div id="robot-system-visual" class="svg-visual large">
+                        <!-- Robot & System Animation injected via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering: Cartoon Guy working with ML -->
+        <section id="engineering" class="module section-padding dark-bg">
+            <div class="container grid-2-col">
+                <div class="engineering-visual">
+                    <div id="cartoon-guy-visual" class="svg-visual large">
+                        <!-- Cartoon Guy Animation injected via JS -->
+                    </div>
+                </div>
+                <div class="engineering-content">
+                    <h2 class="module-title">ENGINEERING NODES</h2>
+                    <p class="hero-desc">Specializing in the intersection of Generative AI, RAG pipelines, and
+                        high-performance data engineering.</p>
+                    <div class="skill-stack">
+                        <div class="skill-item">
+                            <div class="skill-info"><span>GEN-AI ARCHITECTURE</span><span>95%</span></div>
+                            <div class="skill-progress">
+                                <div class="fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>DATA ENGINEERING</span><span>90%</span></div>
+                            <div class="skill-progress">
+                                <div class="fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Archive & Experience -->
+        <section id="archive" class="module section-padding">
+            <div class="container">
+                <h2 class="module-title center">EXECUTION HISTORY</h2>
+                <div class="projects-grid">
+                    <div class="glass-project">
+                        <span class="tag">ACTIVE PROJECT</span>
+                        <h3>ChatLLM Query Engine</h3>
+                        <p>Conversational AI system integrating multi-source SQL databases via secure REST APIs.</p>
+                    </div>
+                    <div class="glass-project">
+                        <span class="tag">COMPLETED</span>
+                        <h3>Enterprise Copilot</h3>
+                        <p>Deployed SharePoint-integrated AI agents for automated knowledge retrieval.</p>
+                    </div>
+                    <div class="glass-project">
+                        <span class="tag">OBSERVABILITY</span>
+                        <h3>GPT Intelligence</h3>
+                        <p>Power BI platform for monitoring LLM token utilization and query latency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="module section-padding dark-bg">
+            <div class="container narrow">
+                <div class="glass-card">
+                    <h2 class="module-title">INITIATE HANDSHAKE</h2>
+                    <form action="https://formspree.io/f/mnnjkqbe" method="POST">
+                        <div class="form-row">
+                            <div class="form-group"><label>SENDER_ID</label><input type="text" name="name" required>
+                            </div>
+                            <div class="form-group"><label>MAIL_VECTOR</label><input type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group"><label>DATA_STREAM</label><textarea name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-long">TRANSMIT PACKET</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 PUNNA ESHWAR RAJ | STATUS: OPTIMAL</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/eshwar-raj-punna-8278bb226" target="_blank"><i
+                        data-lucide="linkedin"></i></a>
+                <a href="mailto:eshwarpunna7303@gmail.com"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
